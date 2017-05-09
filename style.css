@@ -1,3 +1,10 @@
 .jumbotron{
   background-color: #87ceeb;
+
+}
+#nav1{
+  vertical-align: middle;
+}
+#logo{
+  background-color: transparent;
 }
