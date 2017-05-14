@@ -1,3 +1,11 @@
+.header img{
+
+}
 .main{
   margin-top: 100px;
+  text-align: left;
+  margin-right: 300px;
+}
+.form-group{
+  width: 80%;
 }
