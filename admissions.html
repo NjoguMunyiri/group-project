@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
   <div class="header">
@@ -15,78 +16,97 @@
   </div>
   <div class="main">
     <div class="container">
-      <form class="form-horizontal">
-        <div class="form-group">
-          <label for="firstname" class="col-sm-2 control-label">First Name</label>
-          <div class="col-sm-10">
-            <input type="firstname" class="form-control" id="firstname" placeholder="First Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="middlename" class="col-sm-2 control-label">Middle Name</label>
-          <div class="col-sm-10">
-            <input type="middlename" class="form-control" id="middlename" placeholder="Middle Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="surname" class="col-sm-2 control-label">Surname</label>
-          <div class="col-sm-10">
-            <input type="surname" class="form-control" id="surname" placeholder="Surname">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="age" class="col-sm-2 control-label">Age</label>
-          <div class="col-sm-10">
-            <input type="age" class="form-control" id="age" placeholder="Age" type="number">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="age" class="col-sm-2 control-label">Gender</label>
-            <div class="col-sm-10">
-              <input type="checkbox"> Male
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open</button>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Admission</h4>
             </div>
-            <br>
-            <div class="col-sm-2">
-              <input type="checkbox"> Female
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label for="firstname" class="col-sm-2 control-label">First Name</label>
+                  <div class="col-sm-10">
+                    <input type="firstname" class="form-control" id="firstname" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="middlename" class="col-sm-2 control-label">Middle Name</label>
+                  <div class="col-sm-10">
+                    <input type="middlename" class="form-control" id="middlename" placeholder="Middle Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="surname" class="col-sm-2 control-label">Surname</label>
+                  <div class="col-sm-10">
+                    <input type="surname" class="form-control" id="surname" placeholder="Surname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="age" class="col-sm-2 control-label">Age</label>
+                  <div class="col-sm-10">
+                    <input type="age" class="form-control" id="age" placeholder="Age" type="number">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="age" class="col-sm-2 control-label">Gender</label>
+                  <div class="col-sm-10">
+                    <input type="checkbox"> Male
+                  </div>
+                  <br>
+                  <div class="col-sm-2">
+                    <input type="checkbox"> Female
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="dateofbirth" class="col-sm-2 control-label">Date Of Birth</label>
+                  <div class="col-sm-10">
+                    <input id="born" class="form-control" type="date">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Father" class="col-sm-2 control-label">Father's Name</label>
+                  <div class="col-sm-10">
+                    <input type="father" class="form-control" id="father" placeholder="Fathers Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Mother" class="col-sm-2 control-label">Mother's Name</label>
+                  <div class="col-sm-10">
+                    <input type="mother" class="form-control" id="mother" placeholder="Mothers Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Occupation" class="col-sm-2 control-label">Parent's Occupation</label>
+                  <div class="col-sm-10">
+                    <input type="Occupation" class="form-control" id="father" placeholder=" Parent's Occupation">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Contacts" class="col-sm-2 control-label">Parent Contacts</label>
+                  <div class="col-sm-10">
+                    <input type="Parents" class="form-control" id="Parent" placeholder="Parent Contacts">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Address" class="col-sm-2 control-label">Address</label>
+                  <div class="col-sm-10">
+                    <input type="Address" class="form-control" id="Address" placeholder="Address">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>
-        <div class="form-group">
-          <label for="dateofbirth" class="col-sm-2 control-label">Date Of Birth</label>
-          <div class="col-sm-10">
-            <input id="born" class="form-control" type="date">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="Father" class="col-sm-2 control-label">Father's Name</label>
-          <div class="col-sm-10">
-            <input type="father" class="form-control" id="father" placeholder="Fathers Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="Mother" class="col-sm-2 control-label">Mother's Name</label>
-          <div class="col-sm-10">
-            <input type="mother" class="form-control" id="mother" placeholder="Mothers Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="Occupation" class="col-sm-2 control-label">Parent's Occupation</label>
-          <div class="col-sm-10">
-            <input type="Occupation" class="form-control" id="father" placeholder=" Parent's Occupation">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="Contacts" class="col-sm-2 control-label">Parent Contacts</label>
-          <div class="col-sm-10">
-            <input type="Parents" class="form-control" id="Parent" placeholder="Parent Contacts">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="Address" class="col-sm-2 control-label">Address</label>
-          <div class="col-sm-10">
-            <input type="Address" class="form-control" id="Address" placeholder="Address">
-          </div>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
 </body>
