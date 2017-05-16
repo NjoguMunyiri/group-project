@@ -16,7 +16,7 @@ color: white;
 .form-group{
   width: 80%;
 }
-#story{
+#story{       /* THis will hide results*/
   display: none;
 }
 .button{
