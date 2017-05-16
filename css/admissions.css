@@ -5,6 +5,9 @@ color: white;
 .modal-header{
   background-color: #2A88AD;
 }
+.btn{
+  margin-left: 100px;
+}
 .main{
   margin-top: 100px;
   text-align: left;
@@ -13,6 +16,15 @@ color: white;
 .form-group{
   width: 80%;
 }
+#story{
+  display: none;
+}
+.button{
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
 .modal-footer{
   background-color: #2A88AD;
+  height: 80px;
 }
