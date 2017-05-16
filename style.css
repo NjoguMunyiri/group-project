@@ -1,0 +1,19 @@
+body {background-color: Turquoise;}
+.example3 .navbar-brand {
+  height: 80px;
+}
+img {
+  border-radius: 15px;
+}
+
+.ex1 .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ex1 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+footer {
+    display: block;
+}
