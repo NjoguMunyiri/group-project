@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {background-color: Turquoise;}
 .example3 .navbar-brand {
   height: 80px;
@@ -16,4 +17,15 @@ img {
 }
 footer {
     display: block;
+=======
+.jumbotron{
+  background-color: #87ceeb;
+
+}
+#nav1{
+  vertical-align: middle;
+}
+#logo{
+  background-color: transparent;
+>>>>>>> d4cc99e159e3d7e76fd802cc78e2c0a45c8f579a
 }
