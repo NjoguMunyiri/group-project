@@ -1,4 +1,4 @@
-body {background-color: Turquoise;}
+body {background-color: #C0C0C0;}
 .example3 .navbar-brand {
   height: 80px;
 }
@@ -16,4 +16,17 @@ img {
 }
 footer {
     display: block;
+}
+.header{
+  color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+}
+.header h5{
+  height: 100%;
+  font-family: 'Alex Brush', cursive;
+  font-size: 40px;
+}
+.menu{
+  float: right;
 }
