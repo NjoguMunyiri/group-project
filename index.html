@@ -7,7 +7,7 @@
     <!--boostrap css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--font-->
     <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
     <!--boostrap js-->
@@ -16,6 +16,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
+    <script type="text/javascript" src="js/script.js"></script>
 
 
   <body>
@@ -42,7 +43,7 @@
                   <li class="divider"></li>
                   <li><a href="#">Parents</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">Teacher</a></li>
+                  <li id="teachertomodal"><a href="#modaltecher" data-toggle="modal" data-target="#modaltecher">Teacher</a></li>
                 </ul>
               </li>
             </ul>
@@ -154,7 +155,79 @@
           <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
         </footer>
       </div>
+    </div>
 
+    <div class="modal fade" id="modaltecher">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-header">
+            <h6 style="text-alighn:center">Teacher Input dialog</h6>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for=""></label>
+              <div class="input-group">
+                <label for="#maths">Mathematics</label> &nbsp; &nbsp;
+                <input type="text" name="" value="" placeholder="     score in %" id="mathsinput">
+              </div>
+              <br>
+              <div class="input-group">
+                <label for="#eng">English</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="text" name="" value="" placeholder="     score in %" id="enginput">
+              </div>
+              <br>
+              <div class="input-group">
+                <label for="#kisw">Kiswahili</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="text" name="" value="" placeholder="     score in %" id="kiswinput">
+              </div>
+              <br>
+              <div class="input-group">
+                <label for="#sci">Science</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="text" name="" value="" placeholder="     score in %" id="sciinput">
+              </div>
+              <br>
+              <div class="input-group">
+                <label for="#sstre">Social Studies</label> &nbsp;
+                <input type="text" name="" value="" placeholder="     score in %" id="sstreinput">
+              </div>
+              <br>
+              <div class="input-group">
+                <label for="#position">Position</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="text" name="" value="" placeholder="     class position" id="positioninput">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closebtn">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#reportcard" id="sendbtn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="reportcard">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Report Card</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Maths</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="mathoutput"></p>
+            <p>Eng</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="engoutput"></p>
+            <p>Kiswahili</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="kiswoutput"></p>
+            <p>Science</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="scioutput"></p>
+            <p>Social studies and religious education</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="sstreoutput"></p>
+            <p>Marks</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="marksoutput"></p>
+            <p>Position</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="positionoutput"></p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 body {
 
-  background-image: url(assets/cover.jpg);
+  background-image: url(../assets/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
