@@ -51,4 +51,9 @@ $(document).ready(function(){
 
     });
 
+    $("#okbtn").click(function functionName() {
+      $("#firstnameOutput").append(firstname);
+
+    });
+
 });
