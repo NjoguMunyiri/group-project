@@ -1,8 +1,17 @@
 $(document).ready(function(){
+  var maths, eng, kisw, sci, sstre, marks, position = 0;
 
   $(".close").click(function() {
       $(".body").show();
   });
+
+  $("#admissiontomodal").click(function(){
+      $(".body").hide();
+});
+
+  $("#parenttomodal").click(function(){
+      $(".body").hide();
+});
 
     $("#teachertomodal").click(function(){
         $(".body").hide();
@@ -14,13 +23,31 @@ $(document).ready(function(){
 
     $("#sendbtn").click(function() {
 
-        var maths = parseInt($("#mathsinput").val());
-        var eng = parseInt($("#enginput").val());
-        var kisw = parseInt($("#kiswinput").val());
-        var sci = parseInt($("#sciinput").val());
-        var sstre = parseInt($("#sstreinput").val());
-        var marks = (maths+eng+kisw+sci+sstre);
-        var position = parseInt($("#positioninput").val());
+        maths = parseInt($("#mathsinput").val());
+        eng = parseInt($("#enginput").val());
+        kisw = parseInt($("#kiswinput").val());
+        sci = parseInt($("#sciinput").val());
+        sstre = parseInt($("#sstreinput").val());
+        marks = (maths+eng+kisw+sci+sstre);
+        position = parseInt($("#positioninput").val());
+    });
+
+    $("#submitbtn").click(function() {
+
+        var firstname = $("#firstnameinput").val();
+        var middlename = $("#middlenameinput").val();
+        var surname = $("#surnameinput").val();
+        var age = parseInt($("#ageinput").val());
+        var gender
+        var dateofbirth = $("#borninput").val();
+        var father = $("#fatherinput").val();
+        var mother = $("#motherinput").val();
+        var ocupation = $("#occupationinput").val();
+        var contacts = $("#contactsinput").val();
+        var address = $("#addressinput").val();
+
+        $(".body").show();
+
     });
 
 });

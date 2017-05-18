@@ -39,9 +39,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Admission</a></li>
+                  <li id="admissiontomodal"><a href="#modaladmission" data-toggle="modal" data-target="#modaladmission">Admission</a></li>
                   <li class="divider"></li>
-                  <li><a href="#">Parents</a></li>
+                  <li id="parenttomodal"><a href="#modalparent" data-toggle="modal" data-target="#modalparent">Parents</a></li>
                   <li class="divider"></li>
                   <li id="teachertomodal"><a href="#modaltecher" data-toggle="modal" data-target="#modaltecher">Teacher</a></li>
                 </ul>
@@ -157,6 +157,102 @@
       </div>
     </div>
 
+    <!--Modal Admision-->
+    <!-- Modal -->
+    <div class="modal fade" id="modaladmission" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Admission</h2>
+          </div>
+          <div class="modal-body">
+            <!-- Parents form-->
+            <!-- <div id="form1"> -->
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">First Name</label>
+                <div class="col-sm-10">
+                  <input type="firstname" class="form-control" id="firstnameinput" placeholder="First Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="middlename" class="col-sm-2 control-label">Middle Name</label>
+                <div class="col-sm-10">
+                  <input type="middlename" class="form-control" id="middlenameinput" placeholder="Middle Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="surname" class="col-sm-2 control-label">Surname</label>
+                <div class="col-sm-10">
+                  <input type="surname" class="form-control" id="surnameinput" placeholder="Surname">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="age" class="col-sm-2 control-label">Age</label>
+                <div class="col-sm-10">
+                  <input type="age" class="form-control" id="ageinput" placeholder="Age" type="number">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="age" class="col-sm-2 control-label" id="age">Gender</label>
+                <div class="col-sm-10">
+                  <input type="checkbox"> Male
+                </div>
+                <br>
+                <div class="col-sm-10">
+                  <input type="checkbox"> Female
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="dateofbirth" class="col-sm-2 control-label">Date Of Birth</label>
+                <div class="col-sm-10">
+                  <input id="borninput" class="form-control" type="date">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Father" class="col-sm-2 control-label">Father's Name</label>
+                <div class="col-sm-10">
+                  <input type="father" class="form-control" id="fatherinput" placeholder="Fathers Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Mother" class="col-sm-2 control-label">Mother's Name</label>
+                <div class="col-sm-10">
+                  <input type="mother" class="form-control" id="motherinput" placeholder="Mothers Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Occupation" class="col-sm-2 control-label">Parent's Occupation</label>
+                <div class="col-sm-10">
+                  <input type="Occupation" class="form-control" id="occupationinput" placeholder=" Parent's Occupation">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Contacts" class="col-sm-2 control-label">Parent Contacts</label>
+                <div class="col-sm-10">
+                  <input type="Contacts" class="form-control" id="contactsinput" placeholder="Parent Contacts">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Address" class="col-sm-2 control-label">Address</label>
+                <div class="col-sm-10">
+                  <input type="Address" class="form-control" id="addressinput" placeholder="Address">
+                </div>
+              </div>
+              <div class="button">
+                <button type="submit" class="btn btn-primary" id="submitbtn" data-dismiss="modal">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Modal techer-->
     <div class="modal fade" id="modaltecher">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -208,6 +304,7 @@
       </div>
     </div>
 
+    <!-- Modal Report Card -->
     <div class="modal fade" id="reportcard">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -224,10 +321,71 @@
             <p>Science</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="scioutput"></p>
             <p>Social studies and religious education</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="sstreoutput"></p>
             <p>Marks</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="marksoutput"></p>
-            <p>Position</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id="positionoutput"></p>
+            <p>Position</p>  &nbsp; &nbsp; &nbsp; &nbsp; <p id></p>
           </div>
         </div>
       </div>
     </div>
+
+    <!--Modal Parent-->
+    <div class="modal fade" id="modalparent" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            <h4 class="modal-title">WELCOME</h4>
+                    ADMISSSION NUMBER:
+                      <input type="text" name="lastname">
+              <button type="submit" name="button">OK</button>
+          </div>
+      <div class="modal-body">
+
+          Name:<br>
+          <p id="firstnameOutput"></p><br>
+
+           Class:<br>
+          <p id="classOutput"></p>
+          <br>
+          Age:<br>
+          <p id="ageOutput"></p>
+          <br>
+          Sex:<br>
+          <p id="sexOutput"></p>
+          <br>
+         position:<br>
+         <p id="positionOutput"></p>
+          <br>
+         Marks:<br>
+         <p id="marksOutput"></p>
+      <h3>Student Results</h3>
+      <br>
+      Mathematics:<br>
+      <p id="mathsOutput"></p>
+      <br>
+       English:<br>
+      <p id="engOutput"></p>
+      <br>
+      Kiswahili:<br>
+      <p id="kiswOutput"></p>
+      <br>
+      Science:<br>
+      <p id="sciOutput"></p>
+      <br>
+     Social studies/Religion:<br>
+     <p id="sstreOutput"></p>
+      <br>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
   </body>
 </html>
