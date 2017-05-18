@@ -48,7 +48,7 @@ footer {
   padding: 0px;
   margin: 0px;
   width: 50%;
-  position: fixed;
-
-  float: right;
+  height: 429px;
+  margin-left: 25%;
+  opacity: 0.6;
 }
