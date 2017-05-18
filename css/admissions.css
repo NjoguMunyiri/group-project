@@ -6,7 +6,8 @@ color: white;
   background-color: #2A88AD;
 }
 .btn{
-  margin-left: 100px;
+  margin-left: 400px;
+  margin-top: 200px;
 }
 .main{
   margin-top: 100px;
@@ -16,7 +17,7 @@ color: white;
 .form-group{
   width: 80%;
 }
-#story{       /* THis will hide results*/
+#story{       /* This will hide results*/
   display: none;
 }
 .button{
