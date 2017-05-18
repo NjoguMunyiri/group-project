@@ -30,7 +30,6 @@ footer {
     display: block;
 }
 .header{
-  color: #FFFFFF;
   padding: 0px;
   margin: 0px;
 }
@@ -48,7 +47,36 @@ footer {
   padding: 0px;
   margin: 0px;
   width: 50%;
-  height: 429px;
+  height: auto;
   margin-left: 25%;
-  opacity: 0.6;
+  opacity: 0.5;
+  z-index: 1;
+}
+#programs .h2{
+  color: #d7ecff;
+  text-align: center;
+}
+#programs{
+  background-color: transparent;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+.footer{
+  background-color: transparent;
+  color: #000000;
+}
+h2{
+  text-align: center;
+}
+.card{
+  background-color: transparent;
+}
+.card p{
+  filter: blur(100%)
+  color: #000000;
+}
+#seniorschool, #middleschool, #elementary{
+  padding: 30px;
+  border-color:;
 }
