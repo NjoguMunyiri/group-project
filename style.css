@@ -3,6 +3,7 @@ body {
   background-image: url(assets/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -2;
 }
 .body{
 
@@ -37,7 +38,17 @@ footer {
   height: 100%;
   font-family: 'Graduate', cursive;
   font-size: 40px;
+  color: #708090;
+  padding-left: 120px;
 }
 .menu{
+  float: right;
+}
+#slideshow{
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+  position: fixed;
+
   float: right;
 }
