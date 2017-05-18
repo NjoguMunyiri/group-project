@@ -1,10 +1,54 @@
-.jumbotron{
-  background-color: #87ceeb;
+body {
+
+  background-image: url(assets/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+.body{
 
 }
-#nav1{
-  vertical-align: middle;
+#navbar{
+  color: black;
 }
-#logo{
-  background-color: transparent;
+.example3 .navbar-brand {
+  height: 80px;
+}
+img {
+  border-radius: 15px;
+}
+
+.ex1 .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ex1 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+footer {
+    display: block;
+}
+.header{
+  color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+}
+.header h5{
+  height: 100%;
+  font-family: 'Graduate', cursive;
+  font-size: 40px;
+  color: #708090;
+  padding-left: 120px;
+}
+.menu{
+  float: right;
+}
+#slideshow{
+  padding: 0px;
+  margin: 0px;
+  width: 50%;
+  height: 429px;
+  margin-left: 25%;
+  opacity: 0.6;
 }
