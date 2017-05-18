@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var maths, eng, kisw, sci, sstre, marks, position = 0;
+  var firstname, middlename, surname, age, dateofbirth, father, mother, ocupation, contacts, address = "";
 
   $(".close").click(function() {
       $(".body").show();
@@ -34,17 +35,17 @@ $(document).ready(function(){
 
     $("#submitbtn").click(function() {
 
-        var firstname = $("#firstnameinput").val();
-        var middlename = $("#middlenameinput").val();
-        var surname = $("#surnameinput").val();
-        var age = parseInt($("#ageinput").val());
-        var gender
-        var dateofbirth = $("#borninput").val();
-        var father = $("#fatherinput").val();
-        var mother = $("#motherinput").val();
-        var ocupation = $("#occupationinput").val();
-        var contacts = $("#contactsinput").val();
-        var address = $("#addressinput").val();
+        firstname = $("#firstnameinput").val();
+        middlename = $("#middlenameinput").val();
+        surname = $("#surnameinput").val();
+        age = parseInt($("#ageinput").val());
+        gender
+        dateofbirth = $("#borninput").val();
+        father = $("#fatherinput").val();
+        mother = $("#motherinput").val();
+        ocupation = $("#occupationinput").val();
+        contacts = $("#contactsinput").val();
+        address = $("#addressinput").val();
 
         $(".body").show();
 
