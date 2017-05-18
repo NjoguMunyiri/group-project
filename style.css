@@ -1,7 +1,15 @@
 body {
-  background-color: #C0C0C0;
-}
 
+  background-image: url(assets/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.body{
+
+}
+#navbar{
+  color: black;
+}
 .example3 .navbar-brand {
   height: 80px;
 }
