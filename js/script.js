@@ -53,6 +53,9 @@ $(document).ready(function(){
 
     $("#okbtn").click(function functionName() {
       $("#firstnameOutput").append(firstname);
+      $("#ageOutput").append(age);
+      $("sexOutput").append();
+      $("positionOutput").append();
 
     });
 
